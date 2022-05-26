@@ -1,0 +1,4 @@
+*                       text=auto eol=lf
+/.yarn/**               linguist-vendored
+.pnp.cjs               linguist-generated
+.pnp.loader.mjs        linguist-generated
