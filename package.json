@@ -1,6 +1,6 @@
 {
   "name": "@brickdoc/eslint-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ESLint plugin and custom rules for Brickdoc Inc",
   "repository": {
     "type": "git",
