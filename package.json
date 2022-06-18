@@ -1,13 +1,13 @@
 {
-  "name": "@brickdoc/eslint-plugin",
-  "version": "1.0.2",
-  "description": "ESLint plugin and custom rules for Brickdoc Inc",
+  "name": "@pleisto/eslint-plugin",
+  "version": "1.0.3",
+  "description": "ESLint plugin and custom rules for Pleisto Pte Ltd",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brickdoc/brickdoc.git"
+    "url": "git+https://github.com/pleisto/eslint-plugin-pleisto.git"
   },
   "bugs": {
-    "url": "https://github.com/brickdoc/brickdoc/labels/eslint-plugin"
+    "url": "https://github.com/pleisto/eslint-plugin-pleisto"
   },
   "license": "Apache-2.0",
   "main": "lib/index.js",
@@ -15,8 +15,8 @@
     "lib"
   ],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.27.1",
-    "@typescript-eslint/parser": "^5.27.1",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard-with-typescript": "^21.0.1",
     "eslint-plugin-import": "^2.26.0",
@@ -25,14 +25,14 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.0",
-    "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-security-node": "^1.1.1"
   },
   "peerDependencies": {
-    "eslint": "^8.14.0"
+    "eslint": "^8.18.0"
   },
   "volta": {
-    "node": "18.2.0"
+    "node": "18.4.0"
   },
   "packageManager": "yarn@3.2.1"
 }

@@ -1,6 +1,6 @@
-# @brickdoc/eslint-plugin
+# @pleisto/eslint-plugin
 
-ESLint plugin and custom rules for Brickdoc.
+ESLint plugin and custom rules for Pleisto.
 
 ## Config
 
@@ -9,8 +9,8 @@ Usage:
 ```js
 // .eslintrc.js
 module.exports = {
-  extends: ["plugin:@brickdoc/eslint-plugin-brickdoc/react"],
-  // or "plugin:@brickdoc/eslint-plugin-brickdoc/node"
+  extends: ["plugin:@pleisto/eslint-plugin-pleisto/react"],
+  // or "plugin:@pleisto/eslint-plugin-pleisto/node"
 };
 ```
 
