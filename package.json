@@ -1,6 +1,6 @@
 {
   "name": "@pleisto/eslint-plugin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "ESLint plugin and custom rules for Pleisto Pte Ltd",
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^26.5.3",
     "eslint-plugin-jsx-a11y": "^6.6.0",
+    "eslint-plugin-n": "^15.2.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.1",
