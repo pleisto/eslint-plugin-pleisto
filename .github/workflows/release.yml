@@ -7,6 +7,8 @@ jobs:
   release:
     runs-on: ubuntu-latest
     permissions: write-all
+    env:
+      NPM_CONFIG_USERCONFIG: ${{ github.workspace }}/.npmrc
     steps:
       - uses: actions/checkout@v3
         with:
