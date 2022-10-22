@@ -21,14 +21,6 @@ jobs:
               - '**/*.[tj]{s,sx}'
               - 'package.json'
               - '.github/workflows/release.yml'
-      - uses: actions/setup-node@v3
-        if: steps.changes.outputs.js == 'true'
-        with:
-          node-version: 18
-          registry-url: "https://registry.npmjs.org"
-      - name: Install dependencies
-        if: steps.changes.outputs.js == 'true'
-        run: yarn install --no-immutable
       - name: Release
         if: steps.changes.outputs.js == 'true'
         uses: mikeal/merge-release@master
