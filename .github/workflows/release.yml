@@ -27,7 +27,7 @@ jobs:
           registry-url: "https://registry.npmjs.org"
       - name: Install dependencies
         if: steps.changes.outputs.js == 'true'
-        run: yarn install
+        run: yarn install --no-immutable
       - name: Release
         if: steps.changes.outputs.js == 'true'
         uses: mikeal/merge-release@master
