@@ -7,8 +7,6 @@ jobs:
   release:
     runs-on: ubuntu-latest
     permissions: write-all
-    env:
-      NPM_CONFIG_USERCONFIG: ${{ github.workspace }}/.npmrc
     steps:
       - uses: actions/checkout@v3
         with:
@@ -22,6 +20,7 @@ jobs:
             js:
               - '**/*.[tj]{s,sx}'
               - 'package.json'
+              - '.github/workflows/release.yml'
       - uses: actions/setup-node@v3
         if: steps.changes.outputs.js == 'true'
         with:
