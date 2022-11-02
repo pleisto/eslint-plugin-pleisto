@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "eslint": "^8.26.0",
-    "typescript": "^4.9.1-beta"
+    "typescript": "^5.0.0-dev.20221102"
   },
   "volta": {
     "node": "18.11.0"
