@@ -16,7 +16,7 @@
     "LICENSE"
   ],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.6.0",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
     "@typescript-eslint/parser": "^7.6.0",
     "eslint-config-love": "^47.0.0",
     "eslint-config-prettier": "^9.1.0",
