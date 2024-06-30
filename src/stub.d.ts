@@ -1,0 +1,5 @@
+declare module 'eslint-plugin-react-hooks'
+declare module 'eslint-plugin-react-compiler'
+declare module 'eslint-plugin-jsx-a11y'
+declare module 'eslint-plugin-react'
+declare module 'eslint-plugin-perfectionist/configs/recommended-natural'

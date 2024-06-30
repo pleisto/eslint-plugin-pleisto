@@ -1,17 +1,20 @@
 # @pleisto/eslint-plugin
 
-ESLint plugin and custom rules for Pleisto.
+> Acknowledgement: Some code and ideas are borrowed from [@antfu/eslint-config](https://github.com/antfu/eslint-config) licensed under MIT License.
+
+ESLint9 plugin and custom rules for Pleisto.
 
 ## Config
 
 Usage:
 
 ```js
-// .eslintrc.js
-module.exports = {
-  extends: ["plugin:@pleisto/eslint-plugin-pleisto/react"],
-  // or "plugin:@pleisto/eslint-plugin-pleisto/node"
-};
+// eslint.config.mjs
+import { pleistoESLintConfig } from '@pleisto/eslint-plugin'
+
+export default pleistoESLintConfig({
+  // options
+})
 ```
 
 ## License
