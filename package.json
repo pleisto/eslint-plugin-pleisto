@@ -1,6 +1,6 @@
 {
   "name": "@pleisto/eslint-plugin",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "ESLint plugin and custom rules for Pleisto Pte Ltd",
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
   "scripts": {
     "lint:type": "tsc --noEmit",
     "lint:eslint": "eslint src",
+    "lint": "run lint:type && run lint:eslint",
     "typegen": "tsx tools/typegen.ts",
     "dev": "npx @eslint/config-inspector --config eslint.config.ts",
     "build": "run typegen && tsup --format esm,cjs --clean --dts"

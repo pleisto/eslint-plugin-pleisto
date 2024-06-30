@@ -31,6 +31,7 @@ export async function typescript(
   const typeAwareRules: TypedFlatConfigItem['rules'] = {
     '@typescript-eslint/await-thenable': 'error',
     '@typescript-eslint/dot-notation': ['error', { allowKeywords: true }],
+    '@typescript-eslint/no-empty-object-type': 'error',
     '@typescript-eslint/no-floating-promises': 'warn',
     '@typescript-eslint/no-for-in-array': 'error',
     '@typescript-eslint/no-implied-eval': 'error',
