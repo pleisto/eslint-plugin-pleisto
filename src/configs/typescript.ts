@@ -134,6 +134,7 @@ export async function typescript(
         'no-redeclare': 'off',
         'no-use-before-define': 'off',
         'no-useless-constructor': 'off',
+        'unused-imports/no-unused-vars': 'off',
         ...overrides
       }
     },
