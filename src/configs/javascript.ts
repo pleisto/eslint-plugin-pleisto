@@ -1,12 +1,12 @@
 import globals from 'globals'
 
-import type { OptionsIsInEditor, OptionsOverrides, TypedFlatConfigItem } from '../types'
+import type { OptionsOverrides, TypedFlatConfigItem } from '../types'
 
 import { GLOB_SRC, GLOB_SRC_EXT } from '../globs'
 import { pluginUnusedImports } from '../plugins'
 
-export async function javascript(options: OptionsIsInEditor & OptionsOverrides = {}): Promise<TypedFlatConfigItem[]> {
-  const { isInEditor = false, overrides = {} } = options
+export async function javascript(options: OptionsOverrides = {}): Promise<TypedFlatConfigItem[]> {
+  const { overrides = {} } = options
 
   return [
     {
@@ -227,7 +227,7 @@ export async function javascript(options: OptionsIsInEditor & OptionsOverrides =
 
         'symbol-description': 'error',
         'unicode-bom': ['error', 'never'],
-        'unused-imports/no-unused-imports': isInEditor ? 'off' : 'error',
+        'unused-imports/no-unused-imports': 'off',
         'unused-imports/no-unused-vars': [
           'error',
           {

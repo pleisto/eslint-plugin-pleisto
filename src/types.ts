@@ -83,10 +83,6 @@ export interface OptionsRegExp {
   level?: 'error' | 'warn'
 }
 
-export interface OptionsIsInEditor {
-  isInEditor?: boolean
-}
-
 export interface OptionsConfig extends OptionsComponentExts {
   /**
    * Automatically rename plugins in the config.
@@ -104,12 +100,6 @@ export interface OptionsConfig extends OptionsComponentExts {
    * @default true
    */
   gitignore?: FlatGitignoreOptions | boolean
-
-  /**
-   * Control to disable some rules in editors.
-   * @default auto-detect based on the process.env
-   */
-  isInEditor?: boolean
 
   /**
    * Core rules. Can't be disabled.

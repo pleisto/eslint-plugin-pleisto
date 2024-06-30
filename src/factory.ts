@@ -41,14 +41,6 @@ export function pleistoESLintConfig(
   const {
     componentExts = [],
     gitignore: enableGitignore = true,
-    isInEditor = !!(
-      (process.env.VSCODE_PID ||
-        process.env.VSCODE_CWD ||
-        process.env.JETBRAINS_IDE ||
-        process.env.VIM ||
-        process.env.NVIM) &&
-      !process.env.CI
-    ),
     react: enableReact = false,
     regexp: enableRegexp = true,
     typescript: enableTypeScript = true
@@ -70,7 +62,6 @@ export function pleistoESLintConfig(
   configs.push(
     ignores(),
     javascript({
-      isInEditor,
       overrides: getOverrides(options, 'javascript')
     }),
     node(),
@@ -95,7 +86,6 @@ export function pleistoESLintConfig(
   if (options.test ?? true) {
     configs.push(
       test({
-        isInEditor,
         overrides: getOverrides(options, 'test')
       })
     )

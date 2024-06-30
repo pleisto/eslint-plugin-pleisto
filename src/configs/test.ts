@@ -1,4 +1,4 @@
-import type { OptionsFiles, OptionsIsInEditor, OptionsOverrides, TypedFlatConfigItem } from '../types'
+import type { OptionsFiles, OptionsOverrides, TypedFlatConfigItem } from '../types'
 
 import { GLOB_TESTS } from '../globs'
 import { interopDefault } from '../utils'
@@ -6,10 +6,8 @@ import { interopDefault } from '../utils'
 // Hold the reference so we don't redeclare the plugin on each call
 let _pluginTest: any
 
-export async function test(
-  options: OptionsFiles & OptionsIsInEditor & OptionsOverrides = {}
-): Promise<TypedFlatConfigItem[]> {
-  const { files = GLOB_TESTS, isInEditor = false, overrides = {} } = options
+export async function test(options: OptionsFiles & OptionsOverrides = {}): Promise<TypedFlatConfigItem[]> {
+  const { files = GLOB_TESTS, overrides = {} } = options
 
   const [pluginVitest, pluginNoOnlyTests] = await Promise.all([
     interopDefault(import('eslint-plugin-vitest')),
@@ -42,7 +40,7 @@ export async function test(
         'vitest/consistent-test-it': ['error', { fn: 'it', withinDescribe: 'it' }],
         'vitest/no-identical-title': 'error',
         'vitest/no-import-node-test': 'error',
-        'vitest/no-only-tests': isInEditor ? 'off' : 'error',
+        'vitest/no-only-tests': 'off',
         'vitest/prefer-hooks-in-order': 'error',
         'vitest/prefer-lowercase-title': 'error',
 
