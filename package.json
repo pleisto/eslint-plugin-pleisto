@@ -62,7 +62,7 @@
     "eslint-typegen": "^0.2.4",
     "tsup": "^8.1.0",
     "tsx": "^4.16.0",
-    "typescript": "^5.5.2"
+    "typescript": "^5.5.3"
   },
   "volta": {
     "node": "21.7.2"
