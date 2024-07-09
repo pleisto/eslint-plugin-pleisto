@@ -1,6 +1,6 @@
 {
   "name": "@pleisto/eslint-plugin",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "ESLint plugin and custom rules for Pleisto Pte Ltd",
   "repository": {
     "type": "git",
@@ -32,8 +32,8 @@
   },
   "dependencies": {
     "@eslint-react/tools": "^1.5.23",
-    "@typescript-eslint/eslint-plugin": "^8.0.0-alpha.40",
-    "@typescript-eslint/parser": "^8.0.0-alpha.40",
+    "@typescript-eslint/eslint-plugin": "^8.0.0-alpha.41",
+    "@typescript-eslint/parser": "^8.0.0-alpha.41",
     "eslint-config-flat-gitignore": "^0.1.6",
     "eslint-config-prettier": "^9.1.0",
     "eslint-flat-config-utils": "^0.2.5",

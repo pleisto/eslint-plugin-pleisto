@@ -342,6 +342,11 @@ export interface RuleOptions {
    */
   '@typescript-eslint/no-unnecessary-condition'?: Linter.RuleEntry<TypescriptEslintNoUnnecessaryCondition>
   /**
+   * Disallow unnecessary assignment of constructor property parameter
+   * @see https://typescript-eslint.io/rules/no-unnecessary-parameter-property-assignment
+   */
+  '@typescript-eslint/no-unnecessary-parameter-property-assignment'?: Linter.RuleEntry<[]>
+  /**
    * Disallow unnecessary namespace qualifiers
    * @see https://typescript-eslint.io/rules/no-unnecessary-qualifier
    */
@@ -5300,10 +5305,6 @@ type TypescriptEslintNoExtraneousClass = []|[{
 }]
 // ----- @typescript-eslint/no-floating-promises -----
 type TypescriptEslintNoFloatingPromises = []|[{
-  
-  ignoreVoid?: boolean
-  
-  ignoreIIFE?: boolean
   allowForKnownSafePromises?: (string | {
     from: "file"
     name: (string | [string, ...(string)[]])
@@ -5328,6 +5329,12 @@ type TypescriptEslintNoFloatingPromises = []|[{
     name: (string | [string, ...(string)[]])
     package: string
   })[]
+  
+  checkThenables?: boolean
+  
+  ignoreVoid?: boolean
+  
+  ignoreIIFE?: boolean
 }]
 // ----- @typescript-eslint/no-inferrable-types -----
 type TypescriptEslintNoInferrableTypes = []|[{
