@@ -34,7 +34,7 @@
     "@eslint-react/tools": "^1.5.23",
     "@typescript-eslint/eslint-plugin": "^8.0.0-alpha.41",
     "@typescript-eslint/parser": "^8.0.0-alpha.41",
-    "eslint-config-flat-gitignore": "^0.1.6",
+    "eslint-config-flat-gitignore": "^0.1.7",
     "eslint-config-prettier": "^9.1.0",
     "eslint-flat-config-utils": "^0.2.5",
     "eslint-plugin-import-x": "^0.5.3",
