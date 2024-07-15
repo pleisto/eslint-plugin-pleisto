@@ -58,7 +58,7 @@
   "devDependencies": {
     "@eslint/config-inspector": "^0.5.1",
     "@types/node": "^20.14.10",
-    "eslint": "^9.6.0",
+    "eslint": "^9.7.0",
     "eslint-typegen": "^0.2.4",
     "tsup": "^8.1.0",
     "tsx": "^4.16.2",
