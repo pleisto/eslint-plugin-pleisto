@@ -106,7 +106,6 @@ export async function typescript(
       rules: {
         ...pluginTs.configs['eslint-recommended']!.overrides![0]!.rules!,
         ...pluginTs.configs.strict!.rules!,
-        'sort-imports': 'off',
         '@typescript-eslint/ban-ts-comment': ['error', { 'ts-ignore': 'allow-with-description' }],
         '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
         '@typescript-eslint/consistent-type-imports': [

@@ -214,7 +214,6 @@ export async function javascript(options: OptionsOverrides = {}): Promise<TypedF
         'prefer-template': 'error',
         'require-yield': 'error',
 
-        'sort-imports': 'off',
         'symbol-description': 'error',
         'unicode-bom': ['error', 'never'],
         'unused-imports/no-unused-imports': 'off',

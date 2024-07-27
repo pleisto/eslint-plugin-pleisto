@@ -22,13 +22,7 @@ export async function perfectionist(): Promise<TypedFlatConfigItem[]> {
             order: 'asc'
           }
         ],
-        'perfectionist/sort-named-imports': [
-          'error',
-          {
-            type: 'natural',
-            order: 'asc'
-          }
-        ],
+
         'perfectionist/sort-named-exports': [
           'error',
           {
@@ -50,13 +44,7 @@ export async function perfectionist(): Promise<TypedFlatConfigItem[]> {
             order: 'asc'
           }
         ],
-        'perfectionist/sort-imports': [
-          'error',
-          {
-            type: 'natural',
-            order: 'asc'
-          }
-        ],
+
         'perfectionist/sort-exports': [
           'error',
           {
