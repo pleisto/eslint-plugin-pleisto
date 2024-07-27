@@ -1,6 +1,6 @@
 {
   "name": "@pleisto/eslint-plugin",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "ESLint plugin and custom rules for Pleisto Pte Ltd",
   "repository": {
     "type": "git",
