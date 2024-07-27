@@ -1,6 +1,6 @@
 {
   "name": "@pleisto/eslint-plugin",
-  "version": "2.0.8",
+  "version": "2.1.0",
   "description": "ESLint plugin and custom rules for Pleisto Pte Ltd",
   "repository": {
     "type": "git",
@@ -31,24 +31,24 @@
     "build": "run typegen && tsup --format esm,cjs --clean --dts"
   },
   "dependencies": {
-    "@eslint-react/tools": "^1.5.24",
-    "@typescript-eslint/eslint-plugin": "^8.0.0-alpha.41",
-    "@typescript-eslint/parser": "^8.0.0-alpha.41",
-    "eslint-config-flat-gitignore": "^0.1.7",
+    "@eslint-react/tools": "^1.6.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0-alpha.54",
+    "@typescript-eslint/parser": "^8.0.0-alpha.54",
+    "eslint-config-flat-gitignore": "^0.1.8",
     "eslint-config-prettier": "^9.1.0",
     "eslint-flat-config-utils": "^0.2.5",
-    "eslint-plugin-import-x": "^3.0.1",
+    "eslint-plugin-import-x": "^3.1.0",
     "eslint-plugin-jsx-a11y": "^6.9.0",
-    "eslint-plugin-n": "^17.9.0",
+    "eslint-plugin-n": "^17.10.1",
     "eslint-plugin-no-only-tests": "^3.1.0",
-    "eslint-plugin-perfectionist": "^2.11.0",
-    "eslint-plugin-promise": "^6.4.0",
-    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-perfectionist": "^3.0.0",
+    "eslint-plugin-promise": "^7.0.0",
+    "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-compiler": "0.0.0-experimental-0998c1e-20240625",
     "eslint-plugin-react-hooks": "^5.1.0-rc-fb9a90fa48-20240614",
     "eslint-plugin-regexp": "^2.6.0",
-    "eslint-plugin-unicorn": "^54.0.0",
-    "eslint-plugin-unused-imports": "^4.0.0",
+    "eslint-plugin-unicorn": "^55.0.0",
+    "eslint-plugin-unused-imports": "^4.0.1",
     "eslint-plugin-vitest": "^0.5.4"
   },
   "peerDependencies": {
@@ -56,13 +56,13 @@
     "typescript": ">=4.9.5"
   },
   "devDependencies": {
-    "@eslint/config-inspector": "^0.5.1",
-    "@types/node": "^20.14.10",
-    "eslint": "^9.6.0",
+    "@eslint/config-inspector": "^0.5.2",
+    "@types/node": "^20.14.12",
+    "eslint": "^9.8.0",
     "eslint-typegen": "^0.2.4",
-    "tsup": "^8.1.0",
+    "tsup": "^8.2.3",
     "tsx": "^4.16.2",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.4"
   },
   "volta": {
     "node": "21.7.2"
