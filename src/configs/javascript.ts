@@ -214,17 +214,7 @@ export async function javascript(options: OptionsOverrides = {}): Promise<TypedF
         'prefer-template': 'error',
         'require-yield': 'error',
 
-        'sort-imports': [
-          'error',
-          {
-            allowSeparatedGroups: false,
-            ignoreCase: false,
-            ignoreDeclarationSort: true,
-            ignoreMemberSort: false,
-            memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single']
-          }
-        ],
-
+        'sort-imports': 'off',
         'symbol-description': 'error',
         'unicode-bom': ['error', 'never'],
         'unused-imports/no-unused-imports': 'off',
