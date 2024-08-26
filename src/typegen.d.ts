@@ -372,7 +372,7 @@ export interface RuleOptions {
    */
   '@typescript-eslint/no-unnecessary-type-constraint'?: Linter.RuleEntry<[]>
   /**
-   * Disallow type parameters that only appear once
+   * Disallow type parameters that aren't used multiple times
    * @see https://typescript-eslint.io/rules/no-unnecessary-type-parameters
    */
   '@typescript-eslint/no-unnecessary-type-parameters'?: Linter.RuleEntry<[]>
@@ -428,7 +428,7 @@ export interface RuleOptions {
   '@typescript-eslint/no-unused-expressions'?: Linter.RuleEntry<TypescriptEslintNoUnusedExpressions>
   /**
    * Disallow unused variables
-   * @see https://github.com/sweepline/eslint-plugin-unused-imports/blob/master/docs/rules/no-unused-imports.md
+   * @see https://typescript-eslint.io/rules/no-unused-vars
    */
   '@typescript-eslint/no-unused-vars'?: Linter.RuleEntry<TypescriptEslintNoUnusedVars>
   /**
@@ -635,7 +635,7 @@ export interface RuleOptions {
    */
   '@typescript-eslint/unified-signatures'?: Linter.RuleEntry<TypescriptEslintUnifiedSignatures>
   /**
-   * Enforce typing arguments in `.catch()` callbacks as `unknown`
+   * Enforce typing arguments in Promise rejection callbacks as `unknown`
    * @see https://typescript-eslint.io/rules/use-unknown-in-catch-callback-variable
    */
   '@typescript-eslint/use-unknown-in-catch-callback-variable'?: Linter.RuleEntry<[]>
@@ -1154,199 +1154,199 @@ export interface RuleOptions {
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/accessible-emoji.md
    * @deprecated
    */
-  'jsx-a11y/accessible-emoji'?: Linter.RuleEntry<JsxA11yAccessibleEmoji>
+  'jsx-a11y/accessible-emoji'?: Linter.RuleEntry<JsxA11YAccessibleEmoji>
   /**
    * Enforce all elements that require alternative text have meaningful information to relay back to end user.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/alt-text.md
    */
-  'jsx-a11y/alt-text'?: Linter.RuleEntry<JsxA11yAltText>
+  'jsx-a11y/alt-text'?: Linter.RuleEntry<JsxA11YAltText>
   /**
    * Enforce `<a>` text to not exactly match "click here", "here", "link", or "a link".
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/anchor-ambiguous-text.md
    */
-  'jsx-a11y/anchor-ambiguous-text'?: Linter.RuleEntry<JsxA11yAnchorAmbiguousText>
+  'jsx-a11y/anchor-ambiguous-text'?: Linter.RuleEntry<JsxA11YAnchorAmbiguousText>
   /**
    * Enforce all anchors to contain accessible content.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/anchor-has-content.md
    */
-  'jsx-a11y/anchor-has-content'?: Linter.RuleEntry<JsxA11yAnchorHasContent>
+  'jsx-a11y/anchor-has-content'?: Linter.RuleEntry<JsxA11YAnchorHasContent>
   /**
    * Enforce all anchors are valid, navigable elements.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/anchor-is-valid.md
    */
-  'jsx-a11y/anchor-is-valid'?: Linter.RuleEntry<JsxA11yAnchorIsValid>
+  'jsx-a11y/anchor-is-valid'?: Linter.RuleEntry<JsxA11YAnchorIsValid>
   /**
    * Enforce elements with aria-activedescendant are tabbable.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/aria-activedescendant-has-tabindex.md
    */
-  'jsx-a11y/aria-activedescendant-has-tabindex'?: Linter.RuleEntry<JsxA11yAriaActivedescendantHasTabindex>
+  'jsx-a11y/aria-activedescendant-has-tabindex'?: Linter.RuleEntry<JsxA11YAriaActivedescendantHasTabindex>
   /**
    * Enforce all `aria-*` props are valid.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/aria-props.md
    */
-  'jsx-a11y/aria-props'?: Linter.RuleEntry<JsxA11yAriaProps>
+  'jsx-a11y/aria-props'?: Linter.RuleEntry<JsxA11YAriaProps>
   /**
    * Enforce ARIA state and property values are valid.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/aria-proptypes.md
    */
-  'jsx-a11y/aria-proptypes'?: Linter.RuleEntry<JsxA11yAriaProptypes>
+  'jsx-a11y/aria-proptypes'?: Linter.RuleEntry<JsxA11YAriaProptypes>
   /**
    * Enforce that elements with ARIA roles must use a valid, non-abstract ARIA role.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/aria-role.md
    */
-  'jsx-a11y/aria-role'?: Linter.RuleEntry<JsxA11yAriaRole>
+  'jsx-a11y/aria-role'?: Linter.RuleEntry<JsxA11YAriaRole>
   /**
    * Enforce that elements that do not support ARIA roles, states, and properties do not have those attributes.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/aria-unsupported-elements.md
    */
-  'jsx-a11y/aria-unsupported-elements'?: Linter.RuleEntry<JsxA11yAriaUnsupportedElements>
+  'jsx-a11y/aria-unsupported-elements'?: Linter.RuleEntry<JsxA11YAriaUnsupportedElements>
   /**
    * Enforce that autocomplete attributes are used correctly.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/autocomplete-valid.md
    */
-  'jsx-a11y/autocomplete-valid'?: Linter.RuleEntry<JsxA11yAutocompleteValid>
+  'jsx-a11y/autocomplete-valid'?: Linter.RuleEntry<JsxA11YAutocompleteValid>
   /**
    * Enforce a clickable non-interactive element has at least one keyboard event listener.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/click-events-have-key-events.md
    */
-  'jsx-a11y/click-events-have-key-events'?: Linter.RuleEntry<JsxA11yClickEventsHaveKeyEvents>
+  'jsx-a11y/click-events-have-key-events'?: Linter.RuleEntry<JsxA11YClickEventsHaveKeyEvents>
   /**
    * Enforce that a control (an interactive element) has a text label.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/control-has-associated-label.md
    */
-  'jsx-a11y/control-has-associated-label'?: Linter.RuleEntry<JsxA11yControlHasAssociatedLabel>
+  'jsx-a11y/control-has-associated-label'?: Linter.RuleEntry<JsxA11YControlHasAssociatedLabel>
   /**
    * Enforce heading (`h1`, `h2`, etc) elements contain accessible content.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/heading-has-content.md
    */
-  'jsx-a11y/heading-has-content'?: Linter.RuleEntry<JsxA11yHeadingHasContent>
+  'jsx-a11y/heading-has-content'?: Linter.RuleEntry<JsxA11YHeadingHasContent>
   /**
    * Enforce `<html>` element has `lang` prop.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/html-has-lang.md
    */
-  'jsx-a11y/html-has-lang'?: Linter.RuleEntry<JsxA11yHtmlHasLang>
+  'jsx-a11y/html-has-lang'?: Linter.RuleEntry<JsxA11YHtmlHasLang>
   /**
    * Enforce iframe elements have a title attribute.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/iframe-has-title.md
    */
-  'jsx-a11y/iframe-has-title'?: Linter.RuleEntry<JsxA11yIframeHasTitle>
+  'jsx-a11y/iframe-has-title'?: Linter.RuleEntry<JsxA11YIframeHasTitle>
   /**
    * Enforce `<img>` alt prop does not contain the word "image", "picture", or "photo".
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/img-redundant-alt.md
    */
-  'jsx-a11y/img-redundant-alt'?: Linter.RuleEntry<JsxA11yImgRedundantAlt>
+  'jsx-a11y/img-redundant-alt'?: Linter.RuleEntry<JsxA11YImgRedundantAlt>
   /**
    * Enforce that elements with interactive handlers like `onClick` must be focusable.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/interactive-supports-focus.md
    */
-  'jsx-a11y/interactive-supports-focus'?: Linter.RuleEntry<JsxA11yInteractiveSupportsFocus>
+  'jsx-a11y/interactive-supports-focus'?: Linter.RuleEntry<JsxA11YInteractiveSupportsFocus>
   /**
    * Enforce that a `label` tag has a text label and an associated control.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/label-has-associated-control.md
    */
-  'jsx-a11y/label-has-associated-control'?: Linter.RuleEntry<JsxA11yLabelHasAssociatedControl>
+  'jsx-a11y/label-has-associated-control'?: Linter.RuleEntry<JsxA11YLabelHasAssociatedControl>
   /**
    * Enforce that `<label>` elements have the `htmlFor` prop.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/label-has-for.md
    * @deprecated
    */
-  'jsx-a11y/label-has-for'?: Linter.RuleEntry<JsxA11yLabelHasFor>
+  'jsx-a11y/label-has-for'?: Linter.RuleEntry<JsxA11YLabelHasFor>
   /**
    * Enforce lang attribute has a valid value.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/lang.md
    */
-  'jsx-a11y/lang'?: Linter.RuleEntry<JsxA11yLang>
+  'jsx-a11y/lang'?: Linter.RuleEntry<JsxA11YLang>
   /**
    * Enforces that `<audio>` and `<video>` elements must have a `<track>` for captions.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/media-has-caption.md
    */
-  'jsx-a11y/media-has-caption'?: Linter.RuleEntry<JsxA11yMediaHasCaption>
+  'jsx-a11y/media-has-caption'?: Linter.RuleEntry<JsxA11YMediaHasCaption>
   /**
    * Enforce that `onMouseOver`/`onMouseOut` are accompanied by `onFocus`/`onBlur` for keyboard-only users.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/mouse-events-have-key-events.md
    */
-  'jsx-a11y/mouse-events-have-key-events'?: Linter.RuleEntry<JsxA11yMouseEventsHaveKeyEvents>
+  'jsx-a11y/mouse-events-have-key-events'?: Linter.RuleEntry<JsxA11YMouseEventsHaveKeyEvents>
   /**
    * Enforce that the `accessKey` prop is not used on any element to avoid complications with keyboard commands used by a screenreader.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/no-access-key.md
    */
-  'jsx-a11y/no-access-key'?: Linter.RuleEntry<JsxA11yNoAccessKey>
+  'jsx-a11y/no-access-key'?: Linter.RuleEntry<JsxA11YNoAccessKey>
   /**
    * Disallow `aria-hidden="true"` from being set on focusable elements.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/no-aria-hidden-on-focusable.md
    */
-  'jsx-a11y/no-aria-hidden-on-focusable'?: Linter.RuleEntry<JsxA11yNoAriaHiddenOnFocusable>
+  'jsx-a11y/no-aria-hidden-on-focusable'?: Linter.RuleEntry<JsxA11YNoAriaHiddenOnFocusable>
   /**
    * Enforce autoFocus prop is not used.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/no-autofocus.md
    */
-  'jsx-a11y/no-autofocus'?: Linter.RuleEntry<JsxA11yNoAutofocus>
+  'jsx-a11y/no-autofocus'?: Linter.RuleEntry<JsxA11YNoAutofocus>
   /**
    * Enforce distracting elements are not used.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/no-distracting-elements.md
    */
-  'jsx-a11y/no-distracting-elements'?: Linter.RuleEntry<JsxA11yNoDistractingElements>
+  'jsx-a11y/no-distracting-elements'?: Linter.RuleEntry<JsxA11YNoDistractingElements>
   /**
    * Interactive elements should not be assigned non-interactive roles.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/no-interactive-element-to-noninteractive-role.md
    */
-  'jsx-a11y/no-interactive-element-to-noninteractive-role'?: Linter.RuleEntry<JsxA11yNoInteractiveElementToNoninteractiveRole>
+  'jsx-a11y/no-interactive-element-to-noninteractive-role'?: Linter.RuleEntry<JsxA11YNoInteractiveElementToNoninteractiveRole>
   /**
    * Non-interactive elements should not be assigned mouse or keyboard event listeners.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/no-noninteractive-element-interactions.md
    */
-  'jsx-a11y/no-noninteractive-element-interactions'?: Linter.RuleEntry<JsxA11yNoNoninteractiveElementInteractions>
+  'jsx-a11y/no-noninteractive-element-interactions'?: Linter.RuleEntry<JsxA11YNoNoninteractiveElementInteractions>
   /**
    * Non-interactive elements should not be assigned interactive roles.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/no-noninteractive-element-to-interactive-role.md
    */
-  'jsx-a11y/no-noninteractive-element-to-interactive-role'?: Linter.RuleEntry<JsxA11yNoNoninteractiveElementToInteractiveRole>
+  'jsx-a11y/no-noninteractive-element-to-interactive-role'?: Linter.RuleEntry<JsxA11YNoNoninteractiveElementToInteractiveRole>
   /**
    * `tabIndex` should only be declared on interactive elements.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/no-noninteractive-tabindex.md
    */
-  'jsx-a11y/no-noninteractive-tabindex'?: Linter.RuleEntry<JsxA11yNoNoninteractiveTabindex>
+  'jsx-a11y/no-noninteractive-tabindex'?: Linter.RuleEntry<JsxA11YNoNoninteractiveTabindex>
   /**
    * Enforce usage of `onBlur` over `onChange` on select menus for accessibility.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/no-onchange.md
    * @deprecated
    */
-  'jsx-a11y/no-onchange'?: Linter.RuleEntry<JsxA11yNoOnchange>
+  'jsx-a11y/no-onchange'?: Linter.RuleEntry<JsxA11YNoOnchange>
   /**
    * Enforce explicit role property is not the same as implicit/default role property on element.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/no-redundant-roles.md
    */
-  'jsx-a11y/no-redundant-roles'?: Linter.RuleEntry<JsxA11yNoRedundantRoles>
+  'jsx-a11y/no-redundant-roles'?: Linter.RuleEntry<JsxA11YNoRedundantRoles>
   /**
    * Enforce that non-interactive, visible elements (such as `<div>`) that have click handlers use the role attribute.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/no-static-element-interactions.md
    */
-  'jsx-a11y/no-static-element-interactions'?: Linter.RuleEntry<JsxA11yNoStaticElementInteractions>
+  'jsx-a11y/no-static-element-interactions'?: Linter.RuleEntry<JsxA11YNoStaticElementInteractions>
   /**
    * Enforces using semantic DOM elements over the ARIA `role` property.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/prefer-tag-over-role.md
    */
-  'jsx-a11y/prefer-tag-over-role'?: Linter.RuleEntry<JsxA11yPreferTagOverRole>
+  'jsx-a11y/prefer-tag-over-role'?: Linter.RuleEntry<JsxA11YPreferTagOverRole>
   /**
    * Enforce that elements with ARIA roles must have all required attributes for that role.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/role-has-required-aria-props.md
    */
-  'jsx-a11y/role-has-required-aria-props'?: Linter.RuleEntry<JsxA11yRoleHasRequiredAriaProps>
+  'jsx-a11y/role-has-required-aria-props'?: Linter.RuleEntry<JsxA11YRoleHasRequiredAriaProps>
   /**
    * Enforce that elements with explicit or implicit roles defined contain only `aria-*` properties supported by that `role`.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/role-supports-aria-props.md
    */
-  'jsx-a11y/role-supports-aria-props'?: Linter.RuleEntry<JsxA11yRoleSupportsAriaProps>
+  'jsx-a11y/role-supports-aria-props'?: Linter.RuleEntry<JsxA11YRoleSupportsAriaProps>
   /**
    * Enforce `scope` prop is only used on `<th>` elements.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/scope.md
    */
-  'jsx-a11y/scope'?: Linter.RuleEntry<JsxA11yScope>
+  'jsx-a11y/scope'?: Linter.RuleEntry<JsxA11YScope>
   /**
    * Enforce `tabIndex` value is not greater than zero.
    * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/HEAD/docs/rules/tabindex-no-positive.md
    */
-  'jsx-a11y/tabindex-no-positive'?: Linter.RuleEntry<JsxA11yTabindexNoPositive>
+  'jsx-a11y/tabindex-no-positive'?: Linter.RuleEntry<JsxA11YTabindexNoPositive>
   /**
    * Enforce the consistent use of either double or single quotes in JSX attributes
    * @see https://eslint.org/docs/latest/rules/jsx-quotes
@@ -4493,7 +4493,7 @@ export interface RuleOptions {
   'unused-imports/no-unused-imports'?: Linter.RuleEntry<UnusedImportsNoUnusedImports>
   /**
    * Disallow unused variables
-   * @see https://github.com/sweepline/eslint-plugin-unused-imports/blob/master/docs/rules/no-unused-imports.md
+   * @see https://github.com/sweepline/eslint-plugin-unused-imports/blob/master/docs/rules/no-unused-vars.md
    */
   'unused-imports/no-unused-vars'?: Linter.RuleEntry<UnusedImportsNoUnusedVars>
   /**
@@ -5393,6 +5393,7 @@ type TypescriptEslintNoMisusedPromises = []|[{
   checksVoidReturn?: (boolean | {
     arguments?: boolean
     attributes?: boolean
+    inheritedMethods?: boolean
     properties?: boolean
     returns?: boolean
     variables?: boolean
@@ -6272,11 +6273,11 @@ type InitDeclarations = ([]|["always"] | []|["never"]|["never", {
   ignoreForLoopInit?: boolean
 }])
 // ----- jsx-a11y/accessible-emoji -----
-type _JsxA11YAccessibleEmoji_JsxA11YAccessibleEmoji = []|[{
+type JsxA11YAccessibleEmoji = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/alt-text -----
-type _JsxA11YAltText_JsxA11YAltText = []|[{
+type JsxA11YAltText = []|[{
   elements?: string[]
   img?: string[]
   object?: string[]
@@ -6285,17 +6286,17 @@ type _JsxA11YAltText_JsxA11YAltText = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/anchor-ambiguous-text -----
-type _JsxA11YAnchorAmbiguousText_JsxA11YAnchorAmbiguousText = []|[{
+type JsxA11YAnchorAmbiguousText = []|[{
   words?: string[]
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/anchor-has-content -----
-type _JsxA11YAnchorHasContent_JsxA11YAnchorHasContent = []|[{
+type JsxA11YAnchorHasContent = []|[{
   components?: string[]
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/anchor-is-valid -----
-type _JsxA11YAnchorIsValid_JsxA11YAnchorIsValid = []|[{
+type JsxA11YAnchorIsValid = []|[{
   components?: string[]
   specialLink?: string[]
   
@@ -6303,38 +6304,38 @@ type _JsxA11YAnchorIsValid_JsxA11YAnchorIsValid = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/aria-activedescendant-has-tabindex -----
-type _JsxA11YAriaActivedescendantHasTabindex_JsxA11YAriaActivedescendantHasTabindex = []|[{
+type JsxA11YAriaActivedescendantHasTabindex = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/aria-props -----
-type _JsxA11YAriaProps_JsxA11YAriaProps = []|[{
+type JsxA11YAriaProps = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/aria-proptypes -----
-type _JsxA11YAriaProptypes_JsxA11YAriaProptypes = []|[{
+type JsxA11YAriaProptypes = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/aria-role -----
-type _JsxA11YAriaRole_JsxA11YAriaRole = []|[{
+type JsxA11YAriaRole = []|[{
   allowedInvalidRoles?: string[]
   ignoreNonDOM?: boolean
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/aria-unsupported-elements -----
-type _JsxA11YAriaUnsupportedElements_JsxA11YAriaUnsupportedElements = []|[{
+type JsxA11YAriaUnsupportedElements = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/autocomplete-valid -----
-type _JsxA11YAutocompleteValid_JsxA11YAutocompleteValid = []|[{
+type JsxA11YAutocompleteValid = []|[{
   inputComponents?: string[]
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/click-events-have-key-events -----
-type _JsxA11YClickEventsHaveKeyEvents_JsxA11YClickEventsHaveKeyEvents = []|[{
+type JsxA11YClickEventsHaveKeyEvents = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/control-has-associated-label -----
-type _JsxA11YControlHasAssociatedLabel_JsxA11YControlHasAssociatedLabel = []|[{
+type JsxA11YControlHasAssociatedLabel = []|[{
   labelAttributes?: string[]
   controlComponents?: string[]
   ignoreElements?: string[]
@@ -6344,32 +6345,32 @@ type _JsxA11YControlHasAssociatedLabel_JsxA11YControlHasAssociatedLabel = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/heading-has-content -----
-type _JsxA11YHeadingHasContent_JsxA11YHeadingHasContent = []|[{
+type JsxA11YHeadingHasContent = []|[{
   components?: string[]
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/html-has-lang -----
-type _JsxA11YHtmlHasLang_JsxA11YHtmlHasLang = []|[{
+type JsxA11YHtmlHasLang = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/iframe-has-title -----
-type _JsxA11YIframeHasTitle_JsxA11YIframeHasTitle = []|[{
+type JsxA11YIframeHasTitle = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/img-redundant-alt -----
-type _JsxA11YImgRedundantAlt_JsxA11YImgRedundantAlt = []|[{
+type JsxA11YImgRedundantAlt = []|[{
   components?: string[]
   words?: string[]
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/interactive-supports-focus -----
-type _JsxA11YInteractiveSupportsFocus_JsxA11YInteractiveSupportsFocus = []|[{
+type JsxA11YInteractiveSupportsFocus = []|[{
   
   tabbable?: ("button" | "checkbox" | "columnheader" | "combobox" | "grid" | "gridcell" | "link" | "listbox" | "menu" | "menubar" | "menuitem" | "menuitemcheckbox" | "menuitemradio" | "option" | "progressbar" | "radio" | "radiogroup" | "row" | "rowheader" | "scrollbar" | "searchbox" | "slider" | "spinbutton" | "switch" | "tab" | "tablist" | "textbox" | "tree" | "treegrid" | "treeitem" | "doc-backlink" | "doc-biblioref" | "doc-glossref" | "doc-noteref")[]
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/label-has-associated-control -----
-type _JsxA11YLabelHasAssociatedControl_JsxA11YLabelHasAssociatedControl = []|[{
+type JsxA11YLabelHasAssociatedControl = []|[{
   labelComponents?: string[]
   labelAttributes?: string[]
   controlComponents?: string[]
@@ -6380,7 +6381,7 @@ type _JsxA11YLabelHasAssociatedControl_JsxA11YLabelHasAssociatedControl = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/label-has-for -----
-type _JsxA11YLabelHasFor_JsxA11YLabelHasFor = []|[{
+type JsxA11YLabelHasFor = []|[{
   components?: string[]
   required?: (("nesting" | "id") | {
     
@@ -6395,18 +6396,18 @@ type _JsxA11YLabelHasFor_JsxA11YLabelHasFor = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/lang -----
-type _JsxA11YLang_JsxA11YLang = []|[{
+type JsxA11YLang = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/media-has-caption -----
-type _JsxA11YMediaHasCaption_JsxA11YMediaHasCaption = []|[{
+type JsxA11YMediaHasCaption = []|[{
   audio?: string[]
   video?: string[]
   track?: string[]
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/mouse-events-have-key-events -----
-type _JsxA11YMouseEventsHaveKeyEvents_JsxA11YMouseEventsHaveKeyEvents = []|[{
+type JsxA11YMouseEventsHaveKeyEvents = []|[{
   
   hoverInHandlers?: string[]
   
@@ -6414,39 +6415,39 @@ type _JsxA11YMouseEventsHaveKeyEvents_JsxA11YMouseEventsHaveKeyEvents = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/no-access-key -----
-type _JsxA11YNoAccessKey_JsxA11YNoAccessKey = []|[{
+type JsxA11YNoAccessKey = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/no-aria-hidden-on-focusable -----
-type _JsxA11YNoAriaHiddenOnFocusable_JsxA11YNoAriaHiddenOnFocusable = []|[{
+type JsxA11YNoAriaHiddenOnFocusable = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/no-autofocus -----
-type _JsxA11YNoAutofocus_JsxA11YNoAutofocus = []|[{
+type JsxA11YNoAutofocus = []|[{
   ignoreNonDOM?: boolean
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/no-distracting-elements -----
-type _JsxA11YNoDistractingElements_JsxA11YNoDistractingElements = []|[{
+type JsxA11YNoDistractingElements = []|[{
   
   elements?: ("marquee" | "blink")[]
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/no-interactive-element-to-noninteractive-role -----
-type _JsxA11YNoInteractiveElementToNoninteractiveRole_JsxA11YNoInteractiveElementToNoninteractiveRole = []|[{
+type JsxA11YNoInteractiveElementToNoninteractiveRole = []|[{
   [k: string]: string[] | undefined
 }]
 // ----- jsx-a11y/no-noninteractive-element-interactions -----
-type _JsxA11YNoNoninteractiveElementInteractions_JsxA11YNoNoninteractiveElementInteractions = []|[{
+type JsxA11YNoNoninteractiveElementInteractions = []|[{
   handlers?: string[]
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/no-noninteractive-element-to-interactive-role -----
-type _JsxA11YNoNoninteractiveElementToInteractiveRole_JsxA11YNoNoninteractiveElementToInteractiveRole = []|[{
+type JsxA11YNoNoninteractiveElementToInteractiveRole = []|[{
   [k: string]: string[] | undefined
 }]
 // ----- jsx-a11y/no-noninteractive-tabindex -----
-type _JsxA11YNoNoninteractiveTabindex_JsxA11YNoNoninteractiveTabindex = []|[{
+type JsxA11YNoNoninteractiveTabindex = []|[{
   
   roles?: string[]
   
@@ -6454,36 +6455,36 @@ type _JsxA11YNoNoninteractiveTabindex_JsxA11YNoNoninteractiveTabindex = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/no-onchange -----
-type _JsxA11YNoOnchange_JsxA11YNoOnchange = []|[{
+type JsxA11YNoOnchange = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/no-redundant-roles -----
-type _JsxA11YNoRedundantRoles_JsxA11YNoRedundantRoles = []|[{
+type JsxA11YNoRedundantRoles = []|[{
   [k: string]: string[] | undefined
 }]
 // ----- jsx-a11y/no-static-element-interactions -----
-type _JsxA11YNoStaticElementInteractions_JsxA11YNoStaticElementInteractions = []|[{
+type JsxA11YNoStaticElementInteractions = []|[{
   handlers?: string[]
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/prefer-tag-over-role -----
-type _JsxA11YPreferTagOverRole_JsxA11YPreferTagOverRole = []|[{
+type JsxA11YPreferTagOverRole = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/role-has-required-aria-props -----
-type _JsxA11YRoleHasRequiredAriaProps_JsxA11YRoleHasRequiredAriaProps = []|[{
+type JsxA11YRoleHasRequiredAriaProps = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/role-supports-aria-props -----
-type _JsxA11YRoleSupportsAriaProps_JsxA11YRoleSupportsAriaProps = []|[{
+type JsxA11YRoleSupportsAriaProps = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/scope -----
-type _JsxA11YScope_JsxA11YScope = []|[{
+type JsxA11YScope = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-a11y/tabindex-no-positive -----
-type _JsxA11YTabindexNoPositive_JsxA11YTabindexNoPositive = []|[{
+type JsxA11YTabindexNoPositive = []|[{
   [k: string]: unknown | undefined
 }]
 // ----- jsx-quotes -----
@@ -7773,6 +7774,10 @@ type PerfectionistSortEnums = []|[{
   
   ignoreCase?: boolean
   
+  sortByValue?: boolean
+  
+  forceNumericSort?: boolean
+  
   partitionByComment?: (string[] | boolean | string)
 }]
 // ----- perfectionist/sort-exports -----
@@ -7936,9 +7941,9 @@ type PerfectionistSortObjects = []|[{
   
   styledComponents?: boolean
   
-  ignorePattern?: string[]
+  destructureOnly?: boolean
   
-  customIgnore?: unknown[]
+  ignorePattern?: string[]
   
   groups?: (string | string[])[]
   
@@ -9018,6 +9023,7 @@ type VitestNoLargeSnapshots = []|[{
 type VitestNoOnlyTests = []|[{
   block?: string[]
   focus?: string[]
+  functions?: string[]
   fix?: boolean
 }]
 // ----- vitest/no-restricted-matchers -----
