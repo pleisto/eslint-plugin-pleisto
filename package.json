@@ -33,7 +33,7 @@
   "dependencies": {
     "@eslint-react/tools": "^1.12.1",
     "@typescript-eslint/eslint-plugin": "^8.2.0",
-    "@typescript-eslint/parser": "^8.2.0",
+    "@typescript-eslint/parser": "^8.3.0",
     "eslint-config-flat-gitignore": "^0.1.8",
     "eslint-config-prettier": "^9.1.0",
     "eslint-flat-config-utils": "^0.3.1",
