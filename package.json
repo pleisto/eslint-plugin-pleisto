@@ -43,7 +43,7 @@
     "eslint-plugin-no-only-tests": "^3.3.0",
     "eslint-plugin-perfectionist": "^3.5.0",
     "eslint-plugin-promise": "^7.1.0",
-    "eslint-plugin-react": "^7.35.2",
+    "eslint-plugin-react": "^7.36.1",
     "eslint-plugin-react-compiler": "0.0.0-experimental-5c9a529-20240911",
     "eslint-plugin-react-hooks": "^5.1.0-rc-d6cb4e77-20240911",
     "eslint-plugin-regexp": "^2.6.0",
