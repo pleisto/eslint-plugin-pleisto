@@ -41,7 +41,7 @@
     "eslint-plugin-jsx-a11y": "^6.10.0",
     "eslint-plugin-n": "^17.10.2",
     "eslint-plugin-no-only-tests": "^3.3.0",
-    "eslint-plugin-perfectionist": "^3.5.0",
+    "eslint-plugin-perfectionist": "^3.9.1",
     "eslint-plugin-promise": "^7.1.0",
     "eslint-plugin-react": "^7.37.1",
     "eslint-plugin-react-compiler": "0.0.0-experimental-78cc3df-20241003",
