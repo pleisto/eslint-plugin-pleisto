@@ -1,6 +1,6 @@
 {
   "name": "@pleisto/eslint-plugin",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "description": "ESLint plugin and custom rules for Pleisto Pte Ltd",
   "repository": {
     "type": "git",
@@ -31,21 +31,21 @@
     "build": "run typegen && tsup --format esm,cjs --clean --dts"
   },
   "dependencies": {
-    "@eslint-react/tools": "^1.14.3",
-    "@typescript-eslint/eslint-plugin": "^8.5.0",
-    "@typescript-eslint/parser": "^8.5.0",
+    "@eslint-react/tools": "^1.15.0",
+    "@typescript-eslint/eslint-plugin": "^8.11.0",
+    "@typescript-eslint/parser": "^8.11.0",
     "eslint-config-flat-gitignore": "^0.3.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-flat-config-utils": "^0.4.0",
-    "eslint-plugin-import-x": "^4.2.1",
-    "eslint-plugin-jsx-a11y": "^6.10.0",
-    "eslint-plugin-n": "^17.10.2",
+    "eslint-plugin-import-x": "^4.3.1",
+    "eslint-plugin-jsx-a11y": "^6.10.1",
+    "eslint-plugin-n": "^17.11.1",
     "eslint-plugin-no-only-tests": "^3.3.0",
-    "eslint-plugin-perfectionist": "^3.5.0",
+    "eslint-plugin-perfectionist": "^3.9.1",
     "eslint-plugin-promise": "^7.1.0",
     "eslint-plugin-react": "^7.37.1",
-    "eslint-plugin-react-compiler": "0.0.0-experimental-78cc3df-20241003",
-    "eslint-plugin-react-hooks": "^5.1.0-rc-d6cb4e77-20240911",
+    "eslint-plugin-react-compiler": "19.0.0-beta-8a03594-20241020",
+    "eslint-plugin-react-hooks": "^5.1.0-rc-fb9a90fa48-20240614",
     "eslint-plugin-regexp": "^2.6.0",
     "eslint-plugin-unicorn": "^56.0.0",
     "eslint-plugin-unused-imports": "^4.1.4",
@@ -56,14 +56,14 @@
     "typescript": ">=4.9.5"
   },
   "devDependencies": {
-    "@eslint/config-inspector": "^0.5.4",
-    "@swc/core": "^1.7.26",
-    "@types/node": "^22.5.4",
-    "eslint": "^9.12.0",
+    "@eslint/config-inspector": "^0.5.5",
+    "@swc/core": "^1.7.39",
+    "@types/node": "^22.7.8",
+    "eslint": "^9.13.0",
     "eslint-typegen": "^0.3.2",
     "tsup": "^8.3.0",
     "tsx": "^4.19.1",
-    "typescript": "^5.6.2"
+    "typescript": "^5.6.3"
   },
   "packageManager": "yarn@4.3.1",
   "volta": {
