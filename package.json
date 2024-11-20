@@ -31,7 +31,7 @@
     "build": "run typegen && tsup --format esm,cjs --clean --dts"
   },
   "dependencies": {
-    "@eslint-react/tools": "^1.15.2",
+    "@eslint-react/tools": "^1.16.2",
     "@typescript-eslint/eslint-plugin": "^8.13.0",
     "@typescript-eslint/parser": "^8.13.0",
     "eslint-config-flat-gitignore": "^0.3.0",
