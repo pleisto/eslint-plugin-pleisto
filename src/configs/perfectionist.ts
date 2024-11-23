@@ -15,13 +15,7 @@ export async function perfectionist(): Promise<TypedFlatConfigItem[]> {
         perfectionist: pluginPerfectionist
       },
       rules: {
-        'perfectionist/sort-intersection-types': [
-          'error',
-          {
-            type: 'natural',
-            order: 'asc'
-          }
-        ],
+        'perfectionist/sort-intersection-types': 'off',
 
         'perfectionist/sort-named-exports': [
           'error',
