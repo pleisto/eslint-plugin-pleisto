@@ -6,7 +6,7 @@ import process from 'node:process'
 
 import type { Awaitable, ConfigNames, OptionsConfig, TypedFlatConfigItem } from './types'
 
-import { ignores, imports, javascript, node, perfectionist, react, test, typescript, unicorn } from './configs'
+import { ignores, imports, javascript, node, react, test, typescript, unicorn } from './configs'
 import { regexp } from './configs/regexp'
 import { interopDefault } from './utils'
 
@@ -66,9 +66,7 @@ export function pleistoESLintConfig(
     }),
     node(),
     imports(),
-    unicorn(),
-
-    perfectionist()
+    unicorn()
   )
 
   if (enableTypeScript) {
