@@ -44,7 +44,7 @@
     "eslint-plugin-perfectionist": "^4.0.3",
     "eslint-plugin-promise": "^7.1.0",
     "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-compiler": "19.0.0-beta-0dec889-20241115",
+    "eslint-plugin-react-compiler": "19.0.0-beta-63b359f-20241101",
     "eslint-plugin-react-hooks": "^5.1.0-rc-fb9a90fa48-20240614",
     "eslint-plugin-regexp": "^2.7.0",
     "eslint-plugin-unicorn": "^56.0.1",
