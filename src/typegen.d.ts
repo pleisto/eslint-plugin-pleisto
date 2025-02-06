@@ -5550,6 +5550,8 @@ type TypescriptEslintNoUnnecessaryBooleanLiteralCompare = []|[{
   allowComparingNullableBooleansToFalse?: boolean
   
   allowComparingNullableBooleansToTrue?: boolean
+  
+  allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing?: boolean
 }]
 // ----- @typescript-eslint/no-unnecessary-condition -----
 type TypescriptEslintNoUnnecessaryCondition = []|[{
