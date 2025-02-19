@@ -14,8 +14,6 @@ export async function unicorn(): Promise<TypedFlatConfigItem[]> {
         'unicorn/error-message': 'error',
         // Uppercase regex escapes
         'unicorn/escape-case': 'error',
-        // Array.isArray instead of instanceof
-        'unicorn/no-instanceof-array': 'error',
         // Ban `new Array` as `Array` constructor's params are ambiguous
         'unicorn/no-new-array': 'error',
         // Prevent deprecated `new Buffer()`
