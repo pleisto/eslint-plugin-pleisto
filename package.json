@@ -58,7 +58,7 @@
     "@eslint/config-inspector": "^1.0.0",
     "@swc/core": "^1.10.18",
     "@types/node": "^22.13.4",
-    "eslint": "^9.20.1",
+    "eslint": "^9.21.0",
     "eslint-typegen": "^2.0.0",
     "tsup": "^8.3.6",
     "tsx": "^4.19.3",
