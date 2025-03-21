@@ -1,8 +1,7 @@
 import type { Linter } from 'eslint'
-
+import type { RuleOptions } from './typegen'
 import { FlatConfigComposer } from 'eslint-flat-config-utils'
 import fs from 'node:fs'
-import process from 'node:process'
 
 import type { Awaitable, ConfigNames, OptionsConfig, TypedFlatConfigItem } from './types'
 
@@ -119,12 +118,16 @@ export function resolveSubOptions<K extends keyof OptionsConfig>(
   options: OptionsConfig,
   key: K
 ): ResolvedOptions<OptionsConfig[K]> {
-  return typeof options[key] === 'boolean' ? ({} as any) : options[key] || {}
+  return typeof options[key] === 'boolean' ? ({} as any) : options[key] || ({} as any)
 }
 
-export function getOverrides<K extends keyof OptionsConfig>(options: OptionsConfig, key: K) {
+export function getOverrides<K extends keyof OptionsConfig>(
+  options: OptionsConfig,
+  key: K
+): Partial<Linter.RulesRecord & RuleOptions> {
   const sub = resolveSubOptions(options, key)
   return {
+    ...(options.overrides as any)?.[key],
     ...('overrides' in sub ? sub.overrides : {})
   }
 }
