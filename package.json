@@ -59,7 +59,7 @@
   },
   "devDependencies": {
     "@eslint/config-inspector": "^1.0.2",
-    "@swc/core": "^1.11.20",
+    "@swc/core": "^1.12.4",
     "@types/node": "^22.14.1",
     "eslint": "^9.24.0",
     "eslint-typegen": "^2.1.0",
