@@ -1,4 +1,5 @@
 import type { Linter } from 'eslint'
+import oxlint from 'eslint-plugin-oxlint'
 import type { RuleOptions } from './typegen'
 import { FlatConfigComposer } from 'eslint-flat-config-utils'
 import fs from 'node:fs'
@@ -42,7 +43,8 @@ export function pleistoESLintConfig(
     gitignore: enableGitignore = true,
     react: enableReact = false,
     regexp: enableRegexp = true,
-    typescript: enableTypeScript = true
+    typescript: enableTypeScript = true,
+    oxlint: enableOxlint = false
   } = options
 
   const configs: Awaitable<TypedFlatConfigItem[]>[] = []
@@ -68,6 +70,8 @@ export function pleistoESLintConfig(
     unicorn()
   )
 
+  const oxlintConfig: (keyof typeof oxlint.configs)[] = ['flat/unicorn', 'flat/import']
+
   if (enableTypeScript) {
     configs.push(
       typescript({
@@ -76,6 +80,7 @@ export function pleistoESLintConfig(
         overrides: getOverrides(options, 'typescript')
       })
     )
+    oxlintConfig.push('flat/typescript')
   }
 
   if (enableRegexp) configs.push(regexp(typeof enableRegexp === 'boolean' ? {} : enableRegexp))
@@ -86,6 +91,7 @@ export function pleistoESLintConfig(
         overrides: getOverrides(options, 'test')
       })
     )
+    oxlintConfig.push('flat/vitest')
   }
 
   if (enableReact) {
@@ -95,6 +101,7 @@ export function pleistoESLintConfig(
         tsconfigPath
       })
     )
+    oxlintConfig.push('flat/react', 'flat/react-hooks', 'flat/react-perf')
   }
 
   // User can optionally pass a flat config item to the first argument
@@ -107,7 +114,7 @@ export function pleistoESLintConfig(
 
   let composer = new FlatConfigComposer<TypedFlatConfigItem, ConfigNames>()
 
-  composer = composer.append(...configs, ...(userConfigs as any))
+  composer = composer.append(...configs, ...(userConfigs as any), ...(enableOxlint ? oxlintConfig.map(config => oxlint.configs[config]) : []))
 
   return composer
 }

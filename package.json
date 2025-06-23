@@ -27,7 +27,7 @@
   ],
   "scripts": {
     "lint:type": "tsc --noEmit",
-    "lint:eslint": "eslint src",
+    "lint:eslint": "eslint --config eslint.config.js src",
     "lint": "run lint:type && run lint:eslint",
     "typegen": "tsx tools/typegen.ts",
     "dev": "npx @eslint/config-inspector --config eslint.config.ts",
@@ -44,6 +44,7 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-n": "^17.17.0",
     "eslint-plugin-no-only-tests": "^3.3.0",
+    "eslint-plugin-oxlint": "^1.3.0",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-compiler": "19.0.0-beta-e993439-20250405",

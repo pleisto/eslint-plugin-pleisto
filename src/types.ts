@@ -292,6 +292,13 @@ export interface OptionsConfig extends OptionsComponentExts, OptionsProjectType 
   autoRenamePlugins?: boolean
 
   /**
+   * Enable oxlint rules.
+   *
+   * @default false
+   */
+  oxlint?: boolean | OptionsOverrides
+
+  /**
    * Provide overrides for rules for each integration.
    *
    * @deprecated use `overrides` option in each integration key instead
