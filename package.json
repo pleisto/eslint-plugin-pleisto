@@ -1,6 +1,6 @@
 {
   "name": "@pleisto/eslint-plugin",
-  "version": "2.5.1",
+  "version": "2.5.3",
   "engines": {
     "node": ">=20"
   },
@@ -34,40 +34,40 @@
     "build": "run typegen && tsup --format esm,cjs --clean --dts"
   },
   "dependencies": {
-    "@eslint-react/tools": "^1.20.1",
-    "@typescript-eslint/eslint-plugin": "^8.29.1",
-    "@typescript-eslint/parser": "^8.29.1",
+    "@typescript-eslint/eslint-plugin": "^8.35.0",
+    "@typescript-eslint/parser": "^8.35.0",
     "eslint-config-flat-gitignore": "^2.1.0",
-    "eslint-config-prettier": "^10.1.2",
-    "eslint-flat-config-utils": "^2.0.1",
-    "eslint-plugin-import-x": "^4.10.3",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-flat-config-utils": "^2.1.0",
+    "eslint-plugin-import-x": "^4.16.1",
     "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-n": "^17.17.0",
+    "eslint-plugin-n": "^17.20.0",
     "eslint-plugin-no-only-tests": "^3.3.0",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-compiler": "19.0.0-beta-e993439-20250405",
+    "eslint-plugin-react-compiler": "19.1.0-rc.2",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-regexp": "^2.7.0",
-    "eslint-plugin-unicorn": "^58.0.0",
+    "eslint-plugin-regexp": "^2.9.0",
+    "eslint-plugin-unicorn": "^59.0.1",
     "eslint-plugin-unused-imports": "^4.1.4",
-    "eslint-plugin-vitest": "^0.5.4"
+    "eslint-plugin-vitest": "^0.5.4",
+    "typescript-eslint": "^8.35.0"
   },
   "peerDependencies": {
     "eslint": ">=9.6.0",
     "typescript": ">=4.9.5"
   },
   "devDependencies": {
-    "@eslint/config-inspector": "^1.0.2",
-    "@swc/core": "^1.11.20",
-    "@types/node": "^22.14.1",
-    "eslint": "^9.24.0",
-    "eslint-typegen": "^2.1.0",
-    "tsup": "^8.4.0",
-    "tsx": "^4.19.3",
+    "@eslint/config-inspector": "^1.1.0",
+    "@swc/core": "^1.12.7",
+    "@types/node": "^22.15.34",
+    "eslint": "^9.30.0",
+    "eslint-typegen": "^2.2.0",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
     "typescript": "^5.8.3"
   },
-  "packageManager": "yarn@4.7.0",
+  "packageManager": "yarn@4.9.2",
   "volta": {
     "node": "22.7.0"
   }
