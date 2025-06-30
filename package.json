@@ -51,7 +51,7 @@
     "eslint-plugin-unicorn": "^59.0.1",
     "eslint-plugin-unused-imports": "^4.1.4",
     "eslint-plugin-vitest": "^0.5.4",
-    "typescript-eslint": "^8.35.0"
+    "typescript-eslint": "^8.35.1"
   },
   "peerDependencies": {
     "eslint": ">=9.6.0",
